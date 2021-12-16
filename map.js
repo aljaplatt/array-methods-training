@@ -25,3 +25,40 @@ function multiply(value, index, arr) {
 const numbersMultiply = numbers.map(multiply);
 
 console.log(numbersMultiply);
+
+//3
+const products = [
+  {
+    name: "laptop",
+    price: 1000,
+    count: 5,
+  },
+  {
+    name: "desktop",
+    price: 1500,
+    count: 2,
+  },
+  {
+    name: "phone",
+    price: 500,
+    count: 12,
+  },
+];
+//a
+// const totalProductsValue = products.map((item) => item.price * item.count);
+
+//b - Here we return an an array of objects with extra info.
+const totalProductsValue = products.map((item) => ({
+  name: item.price,
+  totalValue: item.price * item.count,
+}));
+
+console.log(totalProductsValue);
+
+//4 - convert an array of strings to numbers using map
+
+const str = ["1", "2", "3", "4"];
+
+const num = str.map(Number);
+
+console.log(num);
