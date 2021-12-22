@@ -7,7 +7,7 @@
 const numbers = [1, 2, 3, 4, 5, 6];
 
 // const total = numbers.reduce(callback, initialValue);
-// 0 STarts FROM 0, IF 3, WOULD = 24
+// 0 - Starts FROM 0, IF 3, WOULD = 24
 // const total = numbers.reduce(sum, 0);
 const total = numbers.reduce(sum, 3);
 
