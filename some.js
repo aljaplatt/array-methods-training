@@ -38,3 +38,7 @@ function isAdult(person) {
 }
 
 console.log(res); // true
+
+const res = Math.floor(Math.random() * numbers.length);
+
+console.log(res);

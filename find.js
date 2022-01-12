@@ -50,3 +50,11 @@ function findKelly(person) {
 }
 
 console.log(hobby); // returns shopping
+
+const camperName = bootcampers.find((camper) => camper.indexOf(randomCamper));
+
+function findCamper(camper) {
+  return camper.index === randomCamper;
+}
+
+const camperName = bootcampers.find((camper) => camper.indexOf(randomCamper));
