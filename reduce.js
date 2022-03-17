@@ -12,6 +12,7 @@ const numbers = [1, 2, 3, 4, 5, 6];
 const total = numbers.reduce(sum, 3);
 
 // accumulator keeps tracks of the value that will be returned at the end
+// value - current value at that iteration
 
 function sum(accumulator, value, index, arr) {
   return accumulator + value;
@@ -21,7 +22,7 @@ console.log(total); // = 21 with 0
 
 //2 - return highest number in array
 const moreNumbers = [1, 2, 3, 20, 4, 5, 6];
-
+// -infinity =
 const max = moreNumbers.reduce(callback, -Infinity);
 
 function callback(accumulator, value, index, arr) {
@@ -33,6 +34,13 @@ function callback(accumulator, value, index, arr) {
 }
 
 console.log(max);
+
+function addTwo(acc, val) {
+  if (val >= 10 && val <= 99) return val;
+}
+
+const ans = moreNumbers.reduce(addTwo, 0);
+console.log(ans);
 
 //3
 

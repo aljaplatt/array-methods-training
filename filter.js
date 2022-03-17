@@ -43,3 +43,23 @@ const nums = moreNumbers.filter((value, index, arr) => {
 });
 
 console.log(nums);
+
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+// const result = words.filter(word => word.length > 6);
+
+// console.log(result);
+// // expected output: Array ["exuberant", "destruction", "present"]
+
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
+
+const result = words.filter((word) => !word.includes("e"));
+
+console.log(result);
