@@ -2,8 +2,6 @@
 - Sorts the element of array by manipulating array
 - default order is ascending 
 - converts to a string and compares utf 16 code values
-
-
 */
 
 // 1
@@ -27,8 +25,11 @@ console.log(names);
 
 // function takes in two paramteters. The result of this function will decide which comes first
 
-function compare(a, b) {
-  return a - b;
+// function compare(a, b) {
+//   return a - b;
+// }
+function compare2(a, b) {
+  return b - a;
 }
 /*
 - We have 3 scenarios 
@@ -36,12 +37,14 @@ function compare(a, b) {
 2 - if return = 0 - stay the same 
 3 - greater than 0 - b comes first 
 */
-
 const numbers = [74, 18, 5, 99, 43, 105];
+const lessNumbers = [2, 4];
 
-numbers.sort(compare); // 5, 18, 43, 74, 99, 105
+// numbers.sort(compare); // 5, 18, 43, 74, 99, 105
+lessNumbers.sort(compare2); //
+console.log(lessNumbers); // [2,4]
 
-console.log(numbers);
+// console.log(numbers);
 
 // 4 - With an array of objects
 
@@ -62,7 +65,7 @@ const products = [
 
 // products.sort();
 
-console.log(products); // nothing changes, but we can make another function
+// console.log(products); // nothing changes, but we can make another function
 
 // sort by ascending price - lowest first phone, laptop, desktop
 // products.sort((a, b) => {

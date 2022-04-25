@@ -43,3 +43,7 @@ letters.forEach((item) => {
 });
 
 console.log(count);
+
+const groceries = ['sugar', 'milk', 'walnuts', 'cheese']
+
+groceries.forEach(item => console.log(`- ${item}`))
