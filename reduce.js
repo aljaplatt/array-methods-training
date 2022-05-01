@@ -70,3 +70,4 @@ const totalValue = store.reduce(
 );
 
 console.log(totalValue);
+
